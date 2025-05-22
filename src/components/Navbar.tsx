@@ -1,7 +1,7 @@
 import React from 'react';
 import { Menu } from 'lucide-react';
 
-const Navbar: React.FC = () => {
+export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
 
   return (
@@ -53,6 +53,4 @@ const Navbar: React.FC = () => {
       )}
     </nav>
   );
-};
-
-export default Navbar
+}

@@ -10,7 +10,7 @@ const Gallery: React.FC = () => {
     },
     {
       id: 2,
-      src: "/images/zio comand.png",
+      src: "/images/zio command.png",
       alt: "Negozio 2M NEXT ENERGY - Interno",
       caption: "Il nostro showroom"
     },

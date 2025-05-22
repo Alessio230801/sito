@@ -33,11 +33,11 @@ const Gallery: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {images.map((image) => (
             <div key={image.id} className="overflow-hidden rounded-lg shadow-md bg-white transform transition duration-300 hover:shadow-xl">
-              <div className="relative pt-[75%]">
+              <div className="relative pt-[100%]">
                 <img 
                   src={image.src} 
                   alt={image.alt}
-                  className="absolute top-0 left-0 w-full h-full object-contain p-2"
+                  className="absolute top-0 left-0 w-full h-full object-cover p-4"
                 />
               </div>
               <div className="p-4">

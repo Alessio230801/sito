@@ -7,7 +7,7 @@ const HeroSection: React.FC = () => {
       <div 
         className="text-white min-h-[600px] flex items-center"
         style={{
-          backgroundImage: 'url("src/risorse/sfondo.png.png")',
+          backgroundImage: 'url("/images/sfondo.png.png")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
@@ -46,4 +46,4 @@ const HeroSection: React.FC = () => {
   );
 };
 
-export default HeroSection
+export default HeroSection;

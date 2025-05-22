@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
         {/* Left Logo */}
         <div className="w-12 h-12 ml-8">
           <img 
-            src="src/risorse/logo.png" 
+            src="/images/logo.png" 
             alt="Energy Logo" 
             className="w-full h-full object-contain"
           />
@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
         {/* Right Logo */}
         <div className="w-32 h-12">
           <img 
-            src="src/risorse/logo-dark.png" 
+            src="/images/logo-dark.png" 
             alt="Lamborghini Logo" 
             className="w-full h-full object-contain"
           />
@@ -54,5 +54,3 @@ const Navbar: React.FC = () => {
     </nav>
   );
 };
-
-export default Navbar

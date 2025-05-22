@@ -4,19 +4,19 @@ const Gallery: React.FC = () => {
   const images = [
     {
       id: 1,
-      src: "src/risorse/foto felici.png",
+      src: "/src/risorse/foto felici.png",
       alt: "Negozio 2M NEXT ENERGY - Esterno",
       caption: "La nostra sede"
     },
     {
       id: 2,
-      src: "src/risorse/zio comand.png",
+      src: "/src/risorse/zio comand.png",
       alt: "Negozio 2M NEXT ENERGY - Interno",
       caption: "Il nostro showroom"
     },
     {
       id: 3,
-      src: "src/risorse/locandina png.png",
+      src: "/src/risorse/locandina png.png",
       alt: "Biglietto da visita 2M NEXT ENERGY",
       caption: "Biglietto da visita"
     }
@@ -51,4 +51,4 @@ const Gallery: React.FC = () => {
   );
 };
 
-export default Gallery
+export default Gallery;

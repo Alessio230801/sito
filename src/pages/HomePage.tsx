@@ -5,6 +5,7 @@ import AboutUs from '../components/AboutUs';
 import Services from '../components/Services';
 import Gallery from '../components/Gallery';
 import Partners from '../components/Partners';
+import QuoteForm from '../components/QuoteForm';
 import ContactInfo from '../components/ContactInfo';
 import Map from '../components/Map';
 import CompanyBar from '../components/CompanyBar';
@@ -24,6 +25,7 @@ const HomePage: React.FC = () => {
         <Services />
         <Gallery />
         <Partners />
+        <QuoteForm />
         <ContactInfo />
         <Map />
         <CompanyBar />

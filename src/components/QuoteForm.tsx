@@ -41,29 +41,24 @@ const QuoteForm: React.FC = () => {
     setSubmitStatus('idle');
 
     try {
-      const response = await fetch('/api/send-quote', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
+      // Simulazione invio per sviluppo
+      // In produzione, sostituire con servizio email reale
+      console.log('Dati preventivo:', formData);
+      
+      // Simula delay di rete
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+      setSubmitStatus('success');
+      setFormData({
+        nome: '',
+        cognome: '',
+        email: '',
+        telefono: '',
+        indirizzo: '',
+        citta: '',
+        tipoServizio: '',
+        messaggio: ''
       });
-
-      if (response.ok) {
-        setSubmitStatus('success');
-        setFormData({
-          nome: '',
-          cognome: '',
-          email: '',
-          telefono: '',
-          indirizzo: '',
-          citta: '',
-          tipoServizio: '',
-          messaggio: ''
-        });
-      } else {
-        setSubmitStatus('error');
-      }
     } catch (error) {
       console.error('Errore invio form:', error);
       setSubmitStatus('error');
